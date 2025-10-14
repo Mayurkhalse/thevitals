@@ -36,6 +36,13 @@ const MapView = ({ sites, onSiteSelect }) => {
         zoom={defaultZoom}
         className="h-full w-full rounded-lg shadow-lg"
         style={{ zIndex: 0 }}
+        minZoom={3}
+        maxBounds={[
+          [-90, -180],
+          [90, 180],
+        ]}
+        maxBoundsViscosity={1.0}
+        style={{ height: '100%', width: '100%' }}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
