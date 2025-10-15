@@ -42,7 +42,6 @@ const MapView = ({ sites, onSiteSelect }) => {
           [90, 180],
         ]}
         maxBoundsViscosity={1.0}
-        style={{ height: '100%', width: '100%' }}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
