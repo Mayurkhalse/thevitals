@@ -70,11 +70,15 @@ const MapView = ({ sites, onSiteSelect }) => {
                     <span className="text-gray-600">AQI:</span>
                     <span className="font-semibold">{site.air_quality_index}</span>
                   </p>
-                  <div className={`mt-2 px-2 py-1 rounded text-center text-xs font-semibold ${
-                    site.aqi_category.includes('Poor') ? 'bg-red-100 text-red-800' :
-                    site.aqi_category.includes('Moderate') ? 'bg-yellow-100 text-yellow-800' :
-                    'bg-green-100 text-green-800'
-                  }`}>
+                  <div
+                    className={`mt-2 px-2 py-1 rounded text-center text-xs font-semibold ${
+                      site.aqi_category.includes('Poor')
+                        ? 'bg-red-100 text-red-800'
+                        : site.aqi_category.includes('Moderate')
+                        ? 'bg-yellow-100 text-yellow-800'
+                        : 'bg-green-100 text-green-800'
+                    }`}
+                  >
                     {site.aqi_category}
                   </div>
                 </div>
@@ -90,8 +94,8 @@ const MapView = ({ sites, onSiteSelect }) => {
         ))}
       </MapContainer>
 
-      {/* Legend */}
-      <div className="absolute bottom-4 left-4 bg-white p-3 rounded-lg shadow-lg z-[1000]">
+      {/* Legend (Flushed to Left Edge) */}
+      <div className="absolute bottom-4 left-0 bg-white/90 backdrop-blur-sm p-3 rounded-r-lg shadow-lg z-[1000]">
         <h4 className="font-semibold text-sm mb-2 text-gray-700">Air Quality</h4>
         <div className="space-y-1 text-xs">
           <div className="flex items-center gap-2">
