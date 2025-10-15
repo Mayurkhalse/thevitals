@@ -95,7 +95,7 @@ const MapView = ({ sites, onSiteSelect }) => {
       </MapContainer>
 
       {/* Legend (Flushed to Left Edge) */}
-      <div className="absolute bottom-4 left-0 bg-white/90 backdrop-blur-sm p-3 rounded-r-lg shadow-lg z-[1000]">
+      {/*<div className="absolute bottom-4 left-0 bg-white/90 backdrop-blur-sm p-3 rounded-r-lg shadow-lg z-[1000]">
         <h4 className="font-semibold text-sm mb-2 text-gray-700">Air Quality</h4>
         <div className="space-y-1 text-xs">
           <div className="flex items-center gap-2">
@@ -111,7 +111,7 @@ const MapView = ({ sites, onSiteSelect }) => {
             <span>Poor</span>
           </div>
         </div>
-      </div>
+      </div>*/}
     </div>
   );
 };

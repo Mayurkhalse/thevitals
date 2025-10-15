@@ -85,6 +85,23 @@ function App() {
 
           {/* Info Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+            <div className="absolute bottom-4 left-0 bg-white/90 backdrop-blur-sm p-3 rounded-r-lg shadow-lg z-[1000]">
+                    <h4 className="font-semibold text-sm mb-2 text-gray-700">Air Quality</h4>
+                    <div className="space-y-1 text-xs">
+                      <div className="flex items-center gap-2">
+                        <div className="w-4 h-4 rounded-full bg-green-500 border-2 border-white"></div>
+                        <span>Good</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <div className="w-4 h-4 rounded-full bg-yellow-500 border-2 border-white"></div>
+                        <span>Moderate</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <div className="w-4 h-4 rounded-full bg-red-500 border-2 border-white"></div>
+                        <span>Poor</span>
+                      </div>
+                    </div>
+                  </div>
             <div className="bg-gradient-to-br from-red-50 to-red-100 border border-red-200 rounded-lg p-4">
               <h3 className="font-semibold text-red-800 mb-2">NO₂ Monitoring</h3>
               <p className="text-sm text-red-700">
